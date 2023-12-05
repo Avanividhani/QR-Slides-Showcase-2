@@ -142,11 +142,12 @@ body {
   font-size: 14px;
 }
 
-.main2 button {
-  padding: 20px 30px;
+.container2 button {
+  padding: 12px 20px;
   margin-left: 20px;
   margin-top: 20px;
   background-color: #3498db;
+  font-size: large;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -154,16 +155,10 @@ body {
   transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
-.main2 button:hover {
-  background-color: #2980b9; /* Darker color on hover */
+.container2 button:hover {
+  background-color: #2980b9;
 }
 
-/* Responsive adjustments */
-@media only screen and (max-width: 600px) {
-  .main2 a {
-    width: 100%; /* Make the button full width on small screens */
-  }
-}
 /* Responsive adjustments */
 @media only screen and (max-width: 1200px) {
   .container2 a {
@@ -204,3 +199,5 @@ body {
     width: 100%; /* Make the button full width on small screens */
   }
 }
+
+
