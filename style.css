@@ -143,14 +143,15 @@ body {
 }
 
 .container2 button {
+  padding: 12px 20px;
+  margin-left: 20px;
   margin-top: 20px;
-  padding: 21px 50px;
   background-color: #3498db;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 .container2 button:hover {
