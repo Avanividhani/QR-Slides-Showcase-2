@@ -65,3 +65,127 @@ body {
     grid-gap: 1rem;
   }
 }
+
+
+
+.main1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 100% of the viewport height */
+  overflow: hidden; /* Hide any content overflow */
+}
+
+.main1 a {
+  text-align: center; /* Center the link and image */
+  display: block;
+}
+
+.main1 img {
+  width: 100%;
+  max-width: 80%; /* Adjust as needed */
+  height: auto;
+  object-fit: contain; /* Maintain aspect ratio while fitting within the container */
+  border-radius: 5px; /* Rounded corners for the image */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .main1 img {
+    max-width: 90%; /* Adjust as needed for smaller screens */
+  }
+}
+
+
+
+/* Your existing styles for the image gallery and Screen 1 */
+/* ... */
+
+/* New styles for Screen 2 */
+.main2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 100% of the viewport height */
+  overflow: hidden; /* Hide any content overflow */
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #252a32;
+}
+
+.container2 img {
+  width: 100%;
+  max-width: 100%; /* Adjust as needed */
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the button */
+  border-radius: 5px; /* Rounded corners for the image */
+}
+
+.container2 p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.container2 button {
+  margin-top: 20px;
+  margin-right: 90px;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.container2 button:hover {
+  background-color: #2980b9; /* Darker color on hover */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .container2 {
+    grid-template-columns: repeat(3, 1fr); /* Single column on small screens */
+    padding: 4rem 2rem;
+  }
+}
+
+
+
+.main button {
+  padding: 12px 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.main button:hover {
+  background-color: #2980b9; /* Darker color on hover */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .main a {
+    width: 100%; /* Make the button full width on small screens */
+  }
+}
+
+
