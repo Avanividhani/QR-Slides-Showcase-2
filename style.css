@@ -102,36 +102,43 @@ body {
 /* ... */
 
 /* New styles for Screen 2 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .main2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* 100% of the viewport height */
-  overflow: hidden; /* Hide any content overflow */
+  height: 100vh;
+  overflow: hidden;
+  margin: 20px;
 }
 
 .container2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  
-  grid-gap: 20px;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  margin: -10px; /* Negative margin to reduce white space */
 }
 
 .container2 a {
   text-align: center;
-  display: block;
   text-decoration: none;
   color: #252a32;
+  width: calc(33.33% - 20px); /* Three items in a row with minimal space, adjust as needed */
+  margin: 10px;
+  box-sizing: border-box;
 }
 
 .container2 img {
   width: 100%;
-  max-width: 100%; /* Adjust as needed */
+  max-width: 100%;
   height: auto;
-  object-fit: cover; /* Ensure the image covers the button */
-  border-radius: 5px; /* Rounded corners for the image */
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .container2 p {
@@ -141,27 +148,34 @@ body {
 
 .container2 button {
   margin-top: 20px;
-  margin-right: 90px;
   padding: 12px 20px;
   background-color: #3498db;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  transition: background-color 0.3s ease;
 }
 
 .container2 button:hover {
-  background-color: #2980b9; /* Darker color on hover */
+  background-color: #2980b9;
 }
 
 /* Responsive adjustments */
-@media only screen and (max-width: 600px) {
-  .container2 {
-    grid-template-columns: repeat(3, 1fr); /* Single column on small screens */
-    padding: 4rem 2rem;
+@media only screen and (max-width: 1200px) {
+  .container2 a {
+    width: calc(33.33% - 20px); /* Three items in a row on larger screens */
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .container2 a {
+    width: calc(33.33% - 20px); /* Single column for smaller screens */
+  }
+}
+
+
+
 
 
 
@@ -187,5 +201,3 @@ body {
     width: 100%; /* Make the button full width on small screens */
   }
 }
-
-
