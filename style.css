@@ -150,7 +150,7 @@ button:hover {
 .container2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+/*   justify-content: space-around; */
   align-items: center;
   margin: -10px; /* Negative margin to reduce white space */
 }
