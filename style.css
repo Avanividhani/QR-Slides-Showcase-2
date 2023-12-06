@@ -103,11 +103,46 @@ body {
 
 /* New styles for Screen 2 */
 
+button {
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
 .main2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80%;
   overflow: hidden;
   margin: 20px;
 }
@@ -142,33 +177,17 @@ body {
   font-size: 14px;
 }
 
-.container2 button {
-  padding: 12px 20px;
-  margin-left: 20px;
-  margin-top: 20px;
-  background-color: #3498db;
-  font-size: large;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
-}
-
-.container2 button:hover {
-  background-color: #2980b9;
-}
-
 /* Responsive adjustments */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .container2 a {
-    width: calc(33.33% - 20px); /* Three items in a row on larger screens */
+    width: calc(33.33% - 20px); /* Two items in a row on tablets */
   }
 }
 
+/* Responsive adjustments */
 @media only screen and (max-width: 600px) {
   .container2 a {
-    width: calc(33.33% - 20px); /* Single column for smaller screens */
+    width: calc(33.33% - 20px);/* Single column on phones */
   }
 }
 
