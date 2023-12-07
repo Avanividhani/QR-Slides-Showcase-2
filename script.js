@@ -12,7 +12,6 @@ $('[data-fancybox="gallery"]').fancybox({
 // Trigger click on the first image
 $('[data-fancybox="gallery"]:first').trigger('click');
 
-$('.download-button a').off('click');
 
 
 
