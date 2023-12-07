@@ -8,3 +8,8 @@ $('[data-fancybox="gallery"]').fancybox({
   loop: false,
   protect: true
 });
+
+// Trigger click on the first image
+$('[data-fancybox="gallery"]:first').trigger('click');
+
+
