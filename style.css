@@ -102,7 +102,9 @@ body {
 /* ... */
 
 /* New styles for Screen 2 */
-header {
+
+
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -149,8 +151,28 @@ header {
   text-align: center;
   font-size: 40px; /* Adjust the font size as needed */
   font-weight: bolder;
+}
 
 
+button {
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
 button {
   padding: 15px 30px;
@@ -171,7 +193,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60%;
+  height: 80%;
   overflow: hidden;
   margin: 20px;
 }
@@ -179,7 +201,7 @@ button:hover {
 .container2 {
   display: flex;
   flex-wrap: wrap;
-/*   justify-content: space-around; */
+  justify-content: space-around;
   align-items: center;
   margin: -10px; /* Negative margin to reduce white space */
 }
@@ -218,6 +240,9 @@ button:hover {
   .container2 a {
     width: calc(33.33% - 20px);/* Single column on phones */
   }
+}
+
+
 
 
 
@@ -246,5 +271,3 @@ button:hover {
     width: 100%; /* Make the button full width on small screens */
   }
 }
-
-
