@@ -102,6 +102,53 @@ body {
 /* ... */
 
 /* New styles for Screen 2 */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0; /* Background color for the header */
+  height: 80px; /* Adjust the height as needed */
+  padding: 0 20px; /* Add padding to the header */
+}
+
+.theme-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.theme-name img {
+  width: 150px; /* Adjust the width of the theme image */
+  height: auto;
+  display: block; /* Ensure the image is centered */
+  margin: 0 auto; /* Center the image */
+}
+
+.download-button {
+  margin-left: auto; /* Push the download button to the right */
+}
+
+.download-button img {
+  width: 30px; /* Adjust the width of the download icon */
+  height: auto;
+  cursor: pointer;
+}
+
+/* ... Your existing styles ... */
+
+
+.month-names {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.month-names p {
+  flex: 1;
+  text-align: center;
+  font-size: 40px; /* Adjust the font size as needed */
+  font-weight: bolder;
 
 
 
