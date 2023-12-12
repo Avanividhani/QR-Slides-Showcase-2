@@ -153,6 +153,22 @@ body {
   font-weight: bolder;
 }
 
+/* Styles for JPEG download button */
+.month-names a {
+  text-decoration: none; /* Remove underline from link */
+  color: #252a32; /* Set color for the link */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.month-names img {
+  width: 30px; /* Adjust the width of the JPEG download button icon */
+  height: auto;
+  margin-top: 5px; /* Adjust spacing between text and icon */
+  margin-right: 20px;
+}
+
 
 button {
   padding: 15px 30px;
