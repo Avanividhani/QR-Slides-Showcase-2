@@ -4,6 +4,7 @@ $('[data-fancybox="gallery"]').fancybox({
     "slideShow",
     "fullScreen",
     "close"
+    "download"
   ],
   loop: false,
   protect: true
