@@ -1,10 +1,8 @@
 // Fancybox Configuration
 $('[data-fancybox="gallery"]').fancybox({
   buttons: [
-    "slideShow",
     "fullScreen",
     "close"
-    "share"
   ],
   loop: false,
   protect: true
@@ -13,7 +11,7 @@ $('[data-fancybox="gallery"]').fancybox({
 // Trigger click on the first image
 $('[data-fancybox="gallery"]:first').trigger('click');
 
-$('.download-button a').off('click');
+
 
 
 
