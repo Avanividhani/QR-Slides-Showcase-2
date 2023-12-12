@@ -287,3 +287,10 @@ button:hover {
     width: 100%; /* Make the button full width on small screens */
   }
 }
+
+
+.fancybox-button--download img {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  margin-right: 5px; /* Add some right margin for spacing */
+}
