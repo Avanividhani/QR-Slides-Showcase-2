@@ -50,6 +50,34 @@ document.getElementById('openModalBtn').addEventListener('click', openModal);
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  openVideo();
+});
+
+function openVideo() {
+  var videoModal = document.getElementById('videoModal');
+  var video = videoModal.querySelector('video');
+
+  // Autoplay the video
+  video.muted = true;
+  video.autoplay = true;
+  video.load();
+
+  videoModal.style.display = 'flex';
+}
+
+function closeVideo() {
+  var videoModal = document.getElementById('videoModal');
+  videoModal.style.display = 'none';
+
+  // Pause the video when the modal is closed
+  var video = videoModal.querySelector('video');
+  video.pause();
+}
+
+
+
+
 
 
 
